@@ -1,0 +1,71 @@
+body {
+    background: linear-gradient(to right, #BFF098, #6FD6FF);
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 3rem;
+    flex-direction: ;
+}
+
+.selection {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 6rem;
+    margin-bottom: 2rem;
+}
+
+.selection:hover {
+    transform: scale(1.4);
+    transition: .5s;
+}
+
+.results {
+    display: grid;
+    justify-content: center;
+    font-size: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.result-score {
+    margin-left: .1rem;
+    font-size: 1.5rem;
+    color: red;
+}
+
+.result-selection {
+    opacity: .5;
+}
+
+.result-selection.winner {
+    opacity: 1;
+    font-size: 4rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .selections {
+        gap: 1rem;
+    }
+
+    .selection {
+        font-size: 3rem;
+    }
+
+    .results {
+        font-size: 1.5rem;
+    }
+
+    .result-score {
+        font-size: 1rem;
+    }
+
+    .result-selection {
+        font-size: 2rem;
+    }
+}
